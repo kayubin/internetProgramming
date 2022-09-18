@@ -1,0 +1,48 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 21</title>
+</head>
+<body>
+    <h1>두 수를 이용한 산술연산</h1>
+    <script>
+        var num1 = parseInt(prompt("첫 번째 정수 입력 : "));
+        var num2 = parseInt(prompt("두 번째 정수 입력 : "));
+        var operator = prompt("연산자를 입력하시오");
+        var result;/*안써도 됨*/
+
+        switch(operator)/*따옴표 안써도 됨*/
+        {
+            case'+':
+            {
+                result = num1 + num2;
+                break;
+            }
+            case'-':
+            {
+                result = num1 - num2;
+                break;
+            }
+            case'*':
+            {
+                result = num1 * num2;
+                break;
+            }
+            case'/':
+            {
+                result = num1 / num2;
+                break;
+            }
+            case'%':
+            {
+                result = num1 % num2;
+                break;
+            }
+        }
+        document.write(num1 + operator + num2 + "=" + result);/*출력 안됨---해결*/
+    </script>
+</body>
+</html>

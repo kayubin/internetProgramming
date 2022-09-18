@@ -1,0 +1,37 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 34</title>
+</head>
+<body>
+    <button onclick="inntext()">innerText로 표시</button>
+    <button onclick="innhtml()">innerHTML로 표시</button>
+    <h1>현재 시각: </h1>
+    <div id="current"></div>
+    <script>
+        var now = new Date();
+        var obj = document.getElementById("current");
+
+        function inntext(){
+            obj.innerText = now;//innerText는 내용만가능, innerHTML은 태그도 가능
+            //var info = obj.innerText;
+            obj.style.backgroundColor = "yellow";
+            styleDisplay();//retunr값 없음, document.write쓰면 안됨
+        }
+        function innhtml(){
+            obj.innerHTML = "<h3><em>" + now + "</em></h3>";
+            obj.style.backgroundColor = "lightcyan";
+            styleDisplay();
+        }
+
+        function styleDisplay(){
+            obj.style.border = "1px solid red";//style필수
+            obj.style.width = "500px";
+            obj.style.padding = "30px";
+        }
+    </script>
+</body>
+</html>

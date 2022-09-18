@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="add" onclick="title()">소제목 추가</button>
+    <ul id>
+        <li id="Bach">바흐(Johann Sebastian Bach, 1685~1750) </li>
+        <li id="Handel">헨델(Georg Friedrich Handel, 1685~1759)</li>
+        <li>비발디(Antonio Lucio Vivaldi, 1678~1741)</li>
+    </ul>
+    <script>
+        function title(){
+            var span = document.createElement("span");
+            var textNode1 = document.innerText("서양 음악의 아버지.바로크 시대의 대작곡가");
+            span.append(textNode1);
+            document.getElementById("Bach").appendChild(span);
+        }
+    </script>
+</body>
+</html>

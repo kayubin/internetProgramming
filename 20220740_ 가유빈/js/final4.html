@@ -1,0 +1,47 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!-- date 내장 객체-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final4.html</title>
+    <style>
+        * {box-sizing: border-box;}
+        h1 {text-align: center;}
+        div {
+            margin: 0px auto;
+            width:300px;
+            height:300px;
+            border: 1px solid;
+            border-radius: 300px;;
+            text-align:center;
+            padding: 80px 0px;
+        }
+        p {font-size: 1.4em;
+            color: white;
+        }
+        p#box2 {font-size: 2em;}
+    </style>
+</head>
+<body>
+    <h1>지금은...</h1>
+    <div>
+        <p id="box1">여기에 날짜 표시</p>
+        <p id="box2">여기에 시간 표시</p>
+    </div>
+    <script>
+        var today = new Date;
+        var year = today.getFullYear();
+        var month = today.getMonth();
+        var day = today.getDay();
+        var hours = today.getHours();
+        var minutes = today.getMinutes();
+        var x = document.write(year + month + day);
+        var p = document.createElement("p");
+        p.appendChild(x);
+        document.getElementById("box1").appendChild(p);
+    </script>
+</body>
+</html>

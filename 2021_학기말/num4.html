@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>덧셈 계산기</h1>
+    첫번째 정수 : <input type="text" id="first"><br>
+    두번째 정수 : <input type="text" id="second"><br>
+    합계 : <input type="text" id="total"><br>
+    <button type="submit" onclick="calculate()">계산</button>
+    <script>
+        function calculate(){
+            var first = document.getElementById("first").value;
+            var second = document.getElementById("second").value;
+            var total = parseInt(first) + parseInt(second);//실수형으로 바꾸기 위해 'parseInt'사용
+            document.getElementById("total").value = total;//input에 내용을 넣을때는 'value'라고 해야함!!
+        }
+    </script>
+</body>
+</html>

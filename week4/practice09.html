@@ -1,0 +1,46 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>주문하기</title>
+</head>
+<body>
+    <h1>주문하기</h1>
+    <form name="f3" mathod="get" action="order.jsp">
+        <fieldset>
+            <legend>상품 선택</legend>          
+            <p><b>주문할 상품을 선택해 주세요</b></p>
+            <ul>
+                <li>
+                    <label><input type="checkbox" name="product" value="p_1">상품1</label>
+                    <input type="number" min="0" max="10" name="cnt1">개 <small>(최대 10개)</small>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="product" value="p_2">상품2</label>
+                    <input type="number" min="0" max="7" name="cnt2">개 <small>(최대 7개)</small>
+                </li>
+                <li>
+                    <label><input type="checkbox"  name="product" value="p_3">상품3</label>
+                    <input type="number" value="1" min="0" max="10" name="cnt3">개 <small>(최대 10개)</small>
+                </li>
+                <li>
+                    <label><input type="checkbox" name="product" value="p_4">상품4</label>
+                    <input type="number" min="0" max="7" name="cnt4">개 <small>(최대 7개)</small>
+                </li>
+            </ul>
+            <p><b>포장 선택</b></p>
+            <ul>
+                <li>
+                <label><input type="radio" name="pack" value="yes">선물 포장</label>
+                </li>
+                <li>
+                <label><input type="radio" name="pack" value="No">선물 포장 안함</label>
+                </li>
+                </ul>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </fieldset>
+    </form>
+</body>
+</html>

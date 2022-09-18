@@ -1,0 +1,47 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 25: 구구단 - for문</title>
+    <style>
+        table{
+            border: 1px solid lightgray;
+            width: 100px;
+            border-collapse: collapse;
+            text-align: center;
+            margin: 20px;
+            float: left;
+        }
+        td{
+            border: 1px dashed black;
+        }
+        th{
+            border: 1px solid lightgray;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>구구단</h1>
+        <script>            
+            var j;
+            var i;
+            for(i = 1; i <= 9; i++)
+            {
+            document.write("<table>");
+            document.write('<tr>');                     
+            document.write("<th>" + i + " 단" + "</th>");           
+            document.write('</tr>');
+                      
+            for(j = 1; j <= 9; j++)
+            {
+                document.write('<tr>');
+                document.write('<td>' + i + " X " + j + " = " + i * j + '</td>');
+                document.write('<tr>');
+            }                     
+            document.write("</table>");
+            }     
+        </script>
+</html>

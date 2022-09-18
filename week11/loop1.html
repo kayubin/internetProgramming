@@ -1,0 +1,56 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 연습</title>
+</head>
+<body>
+    <h1>for문</h1>
+    <script>
+        for (var i = 1;i <= 5; i++)/*i =0으로 시작하면 출력결과 다름*/
+            document.write("<h"+i+">안녕하세요</h"+i+">");
+
+        document.write("<hr");
+        var i = 5;
+        while( i >= 1)
+        {
+            document.write("<h"+i+">안녕하세요</h"+i+">");
+            i--;
+        }
+
+        document.write("<hr>");
+        let n = parseInt(prompt("정수를 입력하시오","6"));/*var은 재선언 가능 let은 불가능*/
+        let str = "";
+        for(let i = 1; i <= n; i++)
+            if (n % i == 0)
+                str = str + i + " ";
+        document.write(n + '의 약수 리스트 :' + str);
+
+        document.write("<hr>");
+        document.write("<p>-1이 아닐 때 입력을 받아 배열에 저장</p>");
+
+        var data = [];
+        var num;
+        num = prompt("-1이면 종료한다.");
+        while(num != -1){
+            data.push(num);
+            num = prompt("-1이면 종료한다.");
+        }
+
+        for(var j = 0;j <= data.length;j++)
+            document.write(data[j] + " ");
+
+        document.write("<hr>");
+        sum = 0;
+        su = 1;
+        do{
+            if(su % 2 == 0)
+                sum+=su;
+            su++;
+        }while( su <= 100);
+        document.write("1부터 100까지 짝수 합 = " + sum);
+    </script>
+</body>
+</html>

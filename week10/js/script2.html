@@ -1,0 +1,68 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>조건연산자와 switch문</h1>
+    <script>
+        var num1 = prompt("정수1 입력");
+        var num2 = prompt("정수2 입력");
+        var result = parseInt(num1) / parseInt(num2);/*prompt는 문자형으로 입력받아서 parseInt쓰면 정수형(숫자형)됨*/
+        document.write("결과 출력: " + result);
+        document.write("<br>");
+        var status = (result % 2 == 0)?/*조건연산자*/"짝수이다.": "홀수이다.";
+        document.write(status);
+        document.write("<hr>");
+        document.write("<h3>switch문</h3>");
+
+        if (result < 10)
+            document.write("0대");
+        else if (result < 20)
+            document.write("10대");
+        else if (result < 30)
+            document.write("20대");
+        else if (result < 40)
+            document.write("30대");
+        else if (result < 50)
+            document.write("40대");
+        else if (result < 60)
+            document.write("50대");
+        else
+            document.write("노년기");
+
+        document.write("<hr>");
+        var month = prompt("월 입력");
+        switch(month)
+        {
+            case '1':
+                last_date : 31;
+                break;
+            case '2':
+                last_day : 28;
+                break;
+            case '3':
+            case '5':
+            case '7':
+            case '8':
+            case '10':
+            case '12':
+                last_day = 31;
+                break;
+            case '4':
+            case '6':
+            case '9':
+            case '11':
+                last_day = 30;
+                break;
+            default :
+                last_day = "잘못된 입력입니다.";/*숫자, 문자형 써도됨*/
+        }
+        document.write(month + "월은 마지막 날이" + last_day);
+    </script>
+</body>
+</html>

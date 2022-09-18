@@ -1,0 +1,39 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 27</title>
+    <script>
+         function print_data(){
+            document.write("<h3>원본 데이터 : ");
+            for(i = 0;i < datas.length;i++)
+                document.write(datas[i] +" ");
+            document.write("</h3>");
+            document.write("<hr>");
+        }
+        function draw_bar(m){
+            for(i = 0; i < datas.length; i++)
+            {
+                for(var size = 1; size <= datas[i]; size++)//지역변수로 i설정-안그러면 다른 함수에서 i와 충돌
+                    document.write("*");
+
+                document.write(datas[i] + "<br>");
+            }
+            document.write("<hr>");
+        }
+    </script>
+</head>
+<body>
+    <h2>배열과 함수</h2>
+    <p>datas배열에 20, 31, 40, 10, 23가 저장되어 있을때 배열에 저장된 데이터를 화면에 출력하고,
+        <br>배열에 있는 데이터가를 가져와서 가로막대 그래프를 그려준다.</p>
+    <script>
+        var datas = [20, 31, 40, 10, 23];
+
+        print_data();
+        draw_bar();
+    </script>
+</body>
+</html>

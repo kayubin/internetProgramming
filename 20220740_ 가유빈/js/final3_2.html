@@ -1,0 +1,75 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>final3_2.html</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    table {
+      margin: auto;
+    }
+    th{
+      text-align:right;
+    }
+    td {
+      padding:5px;
+      border:1px solid #ccc;
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+    <h1>좌식 배치표</h1> 
+    <script>
+        var i = 1;
+        var all = parseInt(prompt("학생수는 몇 명인가요?"));//전체 학생수
+        var line = parseInt(prompt("한 줄에 앉을 수 있는 학생수는 몇명일까요?"));//한줄 학생수
+        var seat = all / line;
+        document.write("<table>");
+        document.write("<tr>");
+        document.write("<th>" + "앞문" + "</th>");
+        document.write("</tr>");
+        
+            if(seat == 0)
+            {
+                for(var k = 0; k < seat; k++)
+                {
+                    document.write("<tr>");
+                    for(var j = 0; j < line; j++)
+                    {
+                        document.write("<td>" + "좌석" + i + "</td>");
+                        i++;
+                    }
+                    document.write("</tr>");
+                }
+            }
+            else
+            {
+                for(var l = 0; l < seat - 1; l++)
+                {
+                    document.write("<tr>");
+                    for(var j = 0; j < line; j++)
+                    {
+                        document.write("<td>" + "좌석" + i + "</td>");
+                        i++;
+                    }
+                    document.write("</tr>");
+                }
+                document.write("<tr>");
+                for(var o = 0; o < all % line; o++)
+                {
+                    document.write("<td>" + "좌석" + i + "</td>");
+                    i++;
+                }
+                document.write("</tr>");
+            }
+        document.write("<tr>");
+        document.write("<th>" + "뒷문" + "</th>");
+        document.write("</tr>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 35</title>
+    <style>
+        img{border: 1px solid;}
+        .small {width: 50px; height: 50px;}
+        #big {width: 200px; height: 200px;}
+        #small-pic img:hover {cursor: pointer;}
+    </style>
+</head>
+<body>
+    <div>
+        <div>
+            <img src = "./img1.png" id = "big">
+        </div>
+        <div id = "small-pic">
+            <img src="./img1.png" class="small" onclick="changeImg(this)" title="img1">
+            <img src="./img2.png" class="small" onclick="changeImg(this)" title="img2">
+            <img src="./img3.png" class="small" onclick="changeImg(this)" title="img3">
+        </div>
+    </div>
+    <script>
+        function changeImg(obj){
+            var img_path = obj.getAttribute("src");
+            var img_big = document.querySelector("#big");
+            //img_big.setAttribute("src", img_path);
+            img_big.src = img_path;
+            img_big.alt = "이미지 이름";
+            img_big.width = "500px";
+        }
+    </script>
+</body>
+</html>

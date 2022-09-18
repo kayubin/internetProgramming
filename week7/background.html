@@ -1,0 +1,56 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>배경</title>
+        <style>
+            div{
+                width: 100px;
+                height: 200px;
+                border: 10px dashed;
+                margin: 10px;
+                padding: 10px;/*테두리와 컨텐츠사이의 공간*/
+                float: left;
+                /*color: white;*/
+            }
+            div:first-child{
+                background-color: lightgray;
+                background-clip: padding-box;
+            }
+            .box2{
+                background-image: url('./dot.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .box3{
+                background-image: url('./dot.png');/*이미지명은 대소문자 구분해야함, 태그명은 상관없음*/
+                background-repeat: repeat-x;
+                background-position: center center;
+                background-attachment: scroll;
+            }
+            #box4{
+                background: radial-gradient(green, yellow 80%);
+            }
+        </style>
+    </head>
+    <body>
+        <div>BOX1</div>
+        <div class="box2">BOX2</div>
+        <div class="box3">
+        <ul>
+            <li>box3</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>box3</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>box3</li>
+        </ul>
+    </div>
+        <div id="box4">BOX4</div>
+    </body>
+</html>

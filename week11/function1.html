@@ -1,0 +1,54 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+</head>
+<body>
+    <h1>함수 예제</h1>
+    <script>
+        /*
+        function isPrime(m)
+        {
+                var prime = 1;//모든 수는 소수이다 라고 가정
+            for(var i = 2; i < m; i++)
+                if(n % i == 0)
+                    return false;//소수가 아니다.
+
+            return true;
+        }
+        */
+       var isPrime = function(m)
+       {
+            for(var i = 2; i < m; i++)
+                    if(n % i == 0)
+                        return false;//소수가 아니다.
+
+            return true;
+       }
+
+        //var n = parseInt(prompt("정수 입력", ""));
+        var n = parseInt(Math.random() * 50) + 1;//0 <= 수 <=1 - 난수 구하기
+        document.write(n + "<br>");
+
+        if(isPrime(n))
+            document.write("소수이다<br>");
+        else
+            document.write("소수가 아니다<br>");
+
+        /*
+        var prime = 1;//모든 수는 소수이다 라고 가정
+        for(var i = 2; i < n; i++)
+            if(n % i == 0)
+                prime = 0;//소수가 아니다.
+                break;
+        if(prime == 1)
+            document.write("소수이다");
+        else
+            document.write("소수가 아니다");
+        */
+    </script>
+</body>
+</html>

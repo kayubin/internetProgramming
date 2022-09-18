@@ -1,0 +1,194 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>문제1_index.html</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:visited{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: lightgreen;
+    }
+    table{
+        position: relative;
+        top: 20px;
+            width: 60%;
+            border: 1px solid black;
+            margin-top: 30px;
+            margin: auto; /*가운데 정렬됨*/
+            box-shadow: 2px black;
+            border-collapse: collapse;
+    }
+    tr{
+            height: 60px;
+    }
+    td{
+        text-align: center;/*th는 가윤데정렬 되지만 td는 가운데 정렬 안됨*/
+        border: 1px dotted red;
+        width: 16%;
+    }
+    th{
+        color: black;
+        font-size: 1.2em;
+        border: 1px dotted red;
+    }
+    thead, tfoot{
+        background-color: orange;
+    }
+    tbody{
+        background-color: white;
+    }
+    html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+    }
+    body{
+        background-color: white;
+        background-image: url(./dot.png);
+    }
+    #container {
+        position:relative;
+        margin:0px auto;
+        width: 900px;
+        height: 100%; 
+        background: white;
+    }
+    header{
+        width: 900px;
+        background-color: lemonchiffon;
+    }
+    header ul{
+        display: inline;
+        float: right;
+    }
+    header ul li{
+        list-style-type: none;
+        display: inline;
+        margin: 30px;
+    }
+    footer{
+        width: 900px;
+        background-color: lemonchiffon;
+        text-align: center;
+        display: inline;
+    }
+    footer > img{
+        float: right;
+    }
+    thead th{
+        color: white;
+    }
+    tfoot th{
+        color: white;
+        font-style: italic;
+    }
+    .sum1{
+        background-image: url(./internet.png);
+    }
+    .sum2{
+        background-image: url(./internet1.jpg);
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <img src="./logo.png">
+             <ul>
+                <li><a href="./문제1_index.html">홈</a></li>
+                <li><a href="./문제2_자기소개.html">나란?</a></li>
+                <li><a href="./문제3_나의하루.html">나의 하루</a></li>
+            </ul>
+        </header>
+        <div>
+            <section>
+                <table>
+                    <caption>[표1] 나의 시간표</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td>동덕ARETE</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td>EE:PI</td>
+                            <td>EE:PI</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td rowspan="2" class="sum1">인터넷프로그래밍</td>
+                            <td>갈등과 이해</td>
+                            <td>갈등과 이해</td>
+                            <td></td>
+                            <td>동덕ARETE</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td></td>
+                            <td></td>
+                            <td>베스트셀러 다시읽기</td>
+                            
+                            <td rowspan="3" class="sum1"><a href="./문제4_지원서양식.html">동아리 활동</a></td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td></td>
+                            <td></td>
+                            <td rowspan="2" class="sum2">프로그래밍논리의이해</td>
+                            <td></td>
+                            
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td></td>
+                            <td></td>
+                            
+                            <td></td>
+                            
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="6">자신감 있는 표정을 지으면 자신감이 생긴다</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </div>
+        <footer>
+            <img src="./ryan.png">
+            <h5>COPTRIGHT (C) DDWU ALL RIGHT RESERVED<br>
+                오늘 하루도 기분 좋게....<br>
+                <a href="#">facebook|</a> <a href="#">instagram</a></h5>
+        </footer>
+    </div>
+</body>
+</html>

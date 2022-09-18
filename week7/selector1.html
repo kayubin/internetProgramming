@@ -1,0 +1,39 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>고급 선택자</title>
+        <style>
+            p{font-size: 30px;}
+            body p{color: red;}/*띄어쓰기(body p에서)는 하위or자손 이라는 뜻*/
+            body > p{background: yellow;}/*div에 있는 p는 body의 직접 자손이 아니기 때문에 스타일 적용 안됨*/
+            img[alt]{border: 20px solid blue;}
+            img[alt="배경"]{border: 20px dashed;}
+            img[src^="../week3"]{border: 20px dotted green;}
+            a:link{color: black;}
+            a:visited{color: black;}
+            a{text-decoration: none;}
+            a:hover{background-color: yellow;}
+            a:active{font-size: 30px;}
+            img:hover{width: 400px;}
+        </style>
+    </head>
+    <body>
+        <p>고급 선택자</p>
+        <ul>
+            <li>자손(하위)선택자</li>
+            <li>자식 선택자</li>
+            <li>속성 선택자</li>
+            <li>가상 클래스</li>
+            <li>구조 가상 클래스</li>
+        </ul>
+        <div>
+            <p>속성 선택자 연습</p>
+            <img src="../week3/images/spring_1.jpg">
+            <img src="../week3/spring_2.jpg" alt="배경">
+            <img src="./dot.png" alt="">
+        </div>
+        <a href="https://www.naver.com/">네이버</a>
+    </body>
+</html>

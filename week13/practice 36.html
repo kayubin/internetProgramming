@@ -1,0 +1,45 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 36</title>
+    <style>
+        #container{
+            width: 300px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img src="./images/sad.png" id="cover">
+    </div>
+    <script>
+        var coverObj = document.getElementById("cover");
+        coverObj.onclick = function(event){
+            var str="";
+            str += "이벤트 유형: " + event.type + "\n";
+            str += "이벤트 위치: " + event.pageX + "," + event.pageY;
+            alert(str);
+        }
+
+        coverObj.addEventListener("mouseover", changePic);
+        coverObj.addEventListener("mouseout", originPic);
+
+        function changePic(){
+            coverObj.src = "./images/smile.png";
+        }
+        function originPic(){
+            coverObj.src="./images/sad.png";
+        }
+
+        var newObj = document.createElement("p");
+        var divObj = document.getElementById("container");
+        var newText = document.createTextNode("이미지 변경");
+        newObj.appendChild(newText);//p태그에 이미지 변경 넣음
+        divObj.appendChild(newObj);//div태그에 p태그 넣음
+    </script>
+</body>
+</html>

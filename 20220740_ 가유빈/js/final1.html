@@ -1,0 +1,44 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!-- 난수 생성&소수&배경색-->
+<!---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final1.html</title>
+    <style>
+        div {
+            text-align: center;
+            line-height: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../images/final1.png" id="img">
+        <h3 id="word">시도해보지 않고는 누구도 자신이 얼마만큼 해낼 수 있는지 알지 못한다.</h3>
+    </div>
+    <script>
+        var x = parseInt(prompt());
+        //var prime = 1;
+        function is_prime(n){
+            for(var i = 2;i < n;i++)
+                if(n % i == 0)
+                    return 0;;//소수가 아님
+            return 1;;//소수일때
+        }
+        if(is_prime(x))//소수일때
+        {
+            document.querySelector("div").style.backgroundColor = 'green';
+            document.querySelector("h3").style.color = 'white';
+        }
+        else
+        {
+            document.querySelector("div").style.backgroundColor = 'yellow';
+            document.querySelector("h3").style.color = 'black';
+        }
+    </script>
+</body>
+</html>

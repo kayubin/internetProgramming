@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>     
+       function change(x, size, color){
+            x.style.fontSize = size;
+            x.style.color = color;
+       }
+     </script>
+</head>   
+<body>
+    <button onclick="change(this,'20px','red')">red</button>
+    <button onclick="change(this,'30px','blue')">blue</button>
+    <div onclick ="change(this,'30px','orange')">
+    It's time for javascript</div>
+</body>

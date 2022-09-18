@@ -1,0 +1,134 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>시간표</title>
+        <style>
+                        * {
+                box-sizing: border-box;
+            }
+            html, body {
+                height: 100%;
+                margin: 0px;
+                padding: 0px;
+                background-color: black;
+            }
+            #container {
+                position:relative;
+                margin:0px auto;
+                width: 900px;
+                height: 100%; 
+                background: white;
+            }
+            
+            table{
+                width: 40%;
+                border: 1px solid black;
+                margin-top: 30px;
+                margin: auto; /*가운데 정렬됨*/
+                box-shadow: 2px -2px 5px blue;
+                border-collapse: collapse;
+            }
+            th, td{
+                border: 1px solid black;
+            }
+            caption{
+                caption-side: bottom;
+                text-decoration: underline;
+                font-weight: bold;
+                text-align: right;
+            }
+            tr{
+                height: 60px;
+            }
+            #t1{
+                width: 10%;
+            }
+            td{
+                text-align: center;/*th는 가윤데정렬 되지만 td는 가운데 정렬 안됨*/
+                border: 1px dotted black;
+                width: 16%;
+            }
+            th{
+                color: blue;
+                font-size: 1.2em;
+                border: 1px dotted black;
+            }
+            th.footer{
+                color: red;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <body>
+            <table>
+                <caption>[표 1]나의 시간표</caption>
+                <thead>
+                    <tr height="60px">
+                        <th id="t1"></th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr height="60p">
+                        <th>1</th>
+                        <td>동덕ARETE</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr height="60px">
+                        <th>2</th>
+                        <td>EE:PI</td>
+                        <td>EE:PI</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr height="60px">
+                        <th>3</th>
+                        <td rowspan="2">인터넷프로그래밍</td>
+                        <td>갈등과 이해</td>
+                        <td>갈등과 이해</td>
+                        <td></td>
+                        <td>동덕ARETE</td>
+                    </tr>
+                    <tr height="60px">
+                        <th>4</th>
+    
+                        <td></td>
+                        <td>베스트셀러 다시읽기</td>
+                        <td></td>
+                        <td>베스트셀러 다시읽기</td>
+                    </tr>
+                    <tr height="60px">
+                        <th>5</th>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2">프로그래밍논리의이해</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr height="60px">
+                        <th>6</th>
+                        <td></td>
+                        <td></td>
+                        
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="6" class="footer">이번 학기에도 최선을 다하자</th>
+                    </tr>
+                </tfoot>
+            </table>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 17</title>
+    <style>
+    @media screen and (max-width:768px){
+        body{
+            background-color: navy;
+        }
+        #container{
+            width: 320px;
+            justify-content: space-around;
+        }
+        #card{
+            width: 300px;
+            height: 500px;
+            background-color: white;
+            margin: 20px;
+        }
+        img{
+            width: 300px;
+        }
+        div{
+            margin: auto;
+            text-align: center;
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:1439px){
+        body{
+            background-color: red;
+        }
+        img{
+            height: 250px;          
+        }
+        div{
+            margin: auto;
+            text-align: center;
+        }
+        #container{
+            width: 570px;
+    
+        }
+        #card{
+            width: 550px;
+            height: 250px;
+            background-color: white;
+            margin: 20px;
+            display: inline-block;
+        }
+        #words{
+           
+            width: 200px;
+            display: inline-block;
+           
+        }
+    }
+    @media screen and (min-width:1440px){
+        body{
+            background-color: green;
+        }
+        img{
+            height: 250px;
+        }
+        #container{
+            width: 1140px;
+            display: flex;
+        }
+        #card{
+            width: 550px;
+            height: 250px;
+            background-color: white;
+            margin: 20px;
+           
+        }
+        #words{
+            width: 200px;
+            display: inline-block;
+        }
+        div{
+            justify-content: flex-end;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="card" class="card1">
+            <img src="./moon.jpg">
+            <div id="words">
+                <p><h2>모든 일에는 타이밍이 중요하다</h2></p>
+                <p><h4>- Rat Kurzweil</h4></p>
+            </div>
+        </div>
+        <div id="card" class="card1">
+            <img src="./human.jpg">
+            <div id="words">
+                <p><h2>한번 포기하면 습관이 된다. 절대 포기하지 말아라</h2></p>
+                <p><h4>- Michael Jeffery Jordan</h4></p>
+            </div>
+        </div>
+        <div id="card">
+            <img src="./smile.jpg">
+            <div id="words">
+                <p><h2>다른 사람의 좋은 습관을 내 습관으로 만들어라.</h2></p>
+                <p><h4>- Bill Gates</h4></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

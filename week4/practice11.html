@@ -1,0 +1,96 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입</title>
+</head>
+<body>
+    <form name="f2" method="post" action="save.jsp">
+        <fieldset>
+            <legend>회원가입</legend>
+            <table>
+                <tr>
+                    <th>아이디</th>
+                    <td>
+                        <input type="text" name="userID" size="18" required><a href="check.html">
+                        <input type="image" src="check.png" alt="중복확인"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>패스워드</th> 
+                    <td>
+                        <input type="password" name="userPW" required>
+                    </td>
+                </tr>
+                <tr>
+                    <th>성별</th> 
+                    <td>
+                        <label><input name="gender" type="radio" value="m">남</label>
+                        <label><input name="gender" type="radio" value="F" checked>여</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th>국적</th> 
+                    <td>
+                        <input type="text" name="nation" readonly value="대한민국">
+                    </td>
+                </tr>
+                <tr>
+                    <th>연락처</th> 
+                    <td>
+                        <select name="phone1">
+                            <option value="010" selected>010</option>
+                            <option value="032">032</option>
+                            <option value="02">02</option>
+                            <option value="031">031</option>
+                        </select>            
+                        - <input type="tel" name="phone2" size="5" maxlength="4"> 
+                        - <input type="tel" name="phone3" size="5" maxlength="4">
+                    </td>
+                </tr>
+                <tr>
+                    <th>이메일</th> 
+                    <td>
+                        <input type="email" name="email" size="60">
+                    </td>
+                </tr>
+                <tr>
+                    <th>생일</th> 
+                    <td>
+                        <input type="date" name="birth">
+                    </td>
+                </tr>
+                <tr>
+                    <th>관심분야</th> 
+                    <td>
+                        <label><input type="checkbox" name="interests" value="1">의류</label>
+                        <label><input type="checkbox" name="interests" value="2" checked>신발</label>
+                        <label><input type="checkbox" name="interests" value="3">가방</label>
+                        <label><input type="checkbox" name="interests" value="4">식품</label>
+                        <label><input type="checkbox" name="interests" value="5">여행</label>
+                    </td>
+                    </tr>
+                <tr>
+                    <th>가입인사</th> 
+                    <td>
+                        <textarea name="agree" cols="60" rows="5">회원들에게 간단한 가입인사를 남겨주세요.</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <th>증명사진</th> 
+                    <td>
+                        <input type="file" name="pic" value="파일 선택">
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                    <input type="submit" value="가입하기">
+                    <input type="reset" value="다시작성">
+                    </th>
+                </tr>
+            </table>
+        </fieldset>
+     </form>
+</body>
+</html>

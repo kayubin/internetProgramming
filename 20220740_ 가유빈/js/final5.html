@@ -1,0 +1,60 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!-- 이벤트-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>final5.html</title>
+    <style>
+        #container  { width: 250px; margin: auto; }
+		img         { border: 1px solid; }
+		.small      { width: 50px; height: 50px; }
+		#big        { width: 250px; height: 250px; }	
+	</style>
+</head>
+<body>
+    <div id="container">
+        <div id="small-pic">
+            <img src="../images/img2_s.png" big_src="images/img2_b.png" class="small" id="1">
+            <img src="../images/img3_s.png" big_src="images/img3_b.png" class="small" id="2">
+            <img src="../images/img4_s.png" big_src="images/img4_b.png" class="small" id="3">
+            <img src="../images/img5_s.png" big_src="images/img5_b.png" class="small" id="4">
+        </div>
+        <div>
+            <img src="../images/img2_b.png" id="big">
+            <p>큰 이미지 위에 마우스 올려봐</p>
+        </div>
+    </div> 
+    <script>
+        var img_big = document.getElementById("big");
+        var one = document.getElementById("1");
+        var img_path1 = one.getAttribute("src");
+        var two = document.getElementById("2");
+        var img_path2 = two.getAttribute("src");
+        var three = document.getElementById("3");
+        var img_path3 = three.getAttribute("src");
+        var four = document.getElementById("4");
+        var img_path4 = four.getAttribute("src");
+        one.onmouseover = function(){
+            img_big.src = img_path1;
+        }
+        two.onmouseover = function(){
+            img_big.src = img_path2;
+        }
+        three.onmouseover = function(){
+            img_big.src = img_path3;
+        }
+        four.onmouseover = function(){
+            img_big.src = img_path4;
+        }
+        img_big.onmouseover = function(){
+            document.querySelector("p").innerHTML = '이미지 경로: images/img2_b.png'
+        }
+        img_big.onmouseleave = function(){
+            document.querySelector("p").innerHTML = "큰 이미지 위에 마우스 올려봐"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 18</title>
+    <style>
+        div{
+            border: 1px solid gray;
+            width: 300px;
+            margin: 30px;
+            text-align: center;
+        }
+        #text{
+            color: gray;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 onclick="this.style.color='red'">HTML</h1>
+        <p id="text">위 텍스트를 클릭해 보세요</p>
+    </div>
+    <div>
+        <h1 id="heading">CSS</h1>
+        <p id="text">위 텍스트를 클릭해 보세요</p>
+    </div>
+    <div>
+        <h1 id="heading2">CSS</h1>
+        <p id="text">위 텍스트를 클릭해 보세요</p>
+    </div>
+    <script>
+        var heading = document.querySelector('#heading');
+        heading.onclick = function(){
+            heading.style.color = "green";
+        }
+    </script>
+    <script src="js/practice18.js"></script>
+</body>
+</html>

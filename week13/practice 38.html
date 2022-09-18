@@ -1,0 +1,35 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window 객체</title>
+</head>
+<body onload="openCenter('notice.html', 'pop', 300, 300)">
+    <input type="button" value="Back" onclick="goBack()">
+    <input type="button" value="Forward" onclick="goForward()">
+    <p>팝업 창을 화면 가운데에 표시됩니다</p>
+    <button onclick="location.replace('https://www.naver.com/')">네이버 페이지로 변경</button>
+    <script>
+        function openCenter(a, b, c, d){
+            window.open(a, b, c, d);
+        }
+        function goBack(){
+           window.history.back();
+        }
+        function goForward(){
+            window.history.forward();
+        }
+        var left = (screen.availWidth-w) / 2;
+        var top = (screen.availWidth-h) / 2;
+
+        
+    </script>
+    <script>
+        document.write("<p><b>location.href : </b>" + location.href + "</p>");
+        document.write("<p><b>location.host : </b>" + location.host + "</p>");
+        document.write("<p><b>location.protocol : </b>" + location.protocol + "</p>");
+    </script>
+</body>
+</html>

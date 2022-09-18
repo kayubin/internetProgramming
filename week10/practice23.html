@@ -1,0 +1,21 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 23</title>
+</head>
+<body>
+    <h1>자리 배치도</h1>
+    <script>
+        var people = parseInt(prompt("입장객 수 입력 : "));
+        var seat = parseInt(prompt("한 줄의 좌석 수 입력 : "));
+        var line = parseInt(people / seat);
+
+        if(people % seat != 0)
+            line = line + 1;
+        document.write("모두 " + line + "개의 줄이 필요합니다.");
+    </script>
+</body>
+</html>

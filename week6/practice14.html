@@ -1,0 +1,113 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>practice14</title>
+        <style>
+            *{
+                margin-left: auto;
+                margin-right: auto;/*가운데 정렬*/
+            }
+            div#container{
+                position: relative;
+                width: 70%;
+            }
+            .img1, .img2{width: 40%;}
+            h1{
+                position: relative;
+                width: 300px;   /*별도로 조정*/
+                margin-bottom: 50px;
+                color: blue;
+                text-shadow: 2px 3px 20px yellowgreen;
+            }
+            ul{
+                list-style-type: none;
+                text-align: right;
+                margin-bottom: 30px;
+            }
+            li{/*블록 라벨*/
+                display: inline-block;
+                width: 200px;
+                margin-right: 50px;/*여백을 줌으로써 글자 적절히 띄어놓음*/
+                border-top: 1px solid green;
+                border-bottom: 4px solid green;
+                padding: 5px 0px;/*위 아래 적용, 글자와 테두리사이 거리*/
+                text-align: center;
+                color: red;
+                font-weight: bold;
+            }
+            .box2, .box3{
+                border: 1px solid gray;
+                width: 45%;
+                height: 300px;
+                padding: 10px;
+            }
+            .box1{
+                box-sizing: border-box;
+                padding: 10px;
+                width: 100%;
+                margin-left: 0px;
+                margin-bottom: 50px;
+                border: 1px dashed red;
+                border-radius: 10px;
+            }
+            .box2, .box3{
+                position: absolute;
+            }
+            img{padding: 10px;}
+            .img1{
+                position: fixed;
+                top: 10px;
+                left: 200px;
+            }
+            .img2{float: right;}
+            .box2{
+                border-bottom-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }
+            .box3{
+                clear: both;
+                right: 0px;
+                border-top-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+            .img3{
+                float: left;
+            }
+            p{
+                text-indent: 10px;
+                line-height: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="container">
+        <header>
+            <h1>나의 학교소개</h1>
+            <nav>
+            <ul>
+                <li>로고</li>
+                <li>사이버캠퍼스투어</li>
+                <li>배너</li>
+            </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="box1">
+                <a href="https://www.dongduk.ac.kr/"><img src="../week3/images/logo_top.png" alt="학교로고" class="img1"></a>
+                <p>https://www.dongduk.ac.kr의 왼쪽에 보이는 학교 로고를 다운로드하여 images폴더에 저장한 후 이미지 삽입</p>
+            </div>
+            <div class="box2">
+                <img src="../week3/m_banner_02.jpg" width="40%" alt="사이버캠퍼스투어" class="img2">
+                <p>https://www.dongduk.ac.kr의 아래 보이는 사이버캠퍼스투어 이미지를 다운로드하여 week3폴더에 저장한 후 
+                width="50%", height="50%"크기로 이미지 삽입</p>
+            </div>
+            <div class="box3">
+                <img src="https://www.dongduk.ac.kr/resources/kor/img/vi07.jpg" width="40%" alt="학교교화-목화" class="img3">
+                <p>학교 첫화면 배너에 보이는 이미지 중 하나의 주소로 이미지 삽입<br> 크기는 widht="300"으로 지정</p>
+            </div>
+        </section>
+    </div>
+    </body>
+</html>

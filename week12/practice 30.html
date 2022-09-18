@@ -1,0 +1,68 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 30</title>
+    <style>
+    #item {
+        position:relative;
+        width:500px;
+        height:auto;
+        padding:15px 20px;
+        margin:auto;
+    }
+    button {
+        background-color:rgba(255,255,255,0.7);;
+        padding:5px;
+        border:1px solid #ccc;
+        font-size:0.8em;			
+    }
+    .over {
+        position:absolute;
+        left:30px;
+        bottom:30px;
+    }
+    .detail {
+        width:400px;
+        text-align:left;			
+        line-height:1.8;
+        display:none;
+    }
+    </style>
+</head>
+<body>
+    <div id="item">       
+    <input type="text" value="꽃말과 꽃이름은 무언인가요?" onfocus="cleartext(this)" onselect="setName(this)">
+    <br>
+    <img src="./해바라기.jpg">
+    <button type="button" onclick="showDetail()" class="over" id="look">상세 설명 보기</button>
+    <div id="show" class="detail">
+    <h4>해바라기</h4>
+    <p>국화과에 속하는 일년생 초본식물. 꽃이 해를 따라 도는 것으로 오인해서 해바라기라고 하였다. 
+        중앙아메리카 원산으로 우리나라에는 개화기에 들어왔는데, 번식력이 강해서 각처에서 자생하고 있다. 
+        종자를 식용하며, 한방에서는 줄기속을 약재로 쓴다. [네이버 지식백과] 해바라기 (한국민족문화대백과, 한국학중앙연구원)</p>
+    <button type="button" onclick="hideDetail()">상세 설명 닫기</button>
+    </div>   
+    </div>
+    <script>
+        function cleartext(inputBox){
+            inputBox.style.backgroundColor="yellow";
+            document.querySelector("input").value="꽃말 : 생명, 행운";
+        }
+        function setName(inputBox){
+            document.querySelector("input").value="꽃이름 : 해바라기";
+            inputBox.style.backgroundColor="white";
+        }
+        function showDetail(){
+            show.style.display="block";//클릭하면 글자 보임
+            look.style.display="none";//클릭하면 버튼 사라짐-----class지정자명 사용 불가능?
+        }
+        function hideDetail(){
+            show.style.display="none";//클릭하면 글자 사라짐
+            look.style.display="block";//클릭하면 '상세 설명 보기 버튼' 생성
+        }
+    </script>
+</body>
+</html>

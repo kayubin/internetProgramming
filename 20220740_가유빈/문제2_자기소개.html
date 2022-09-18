@@ -1,0 +1,139 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>문제1_index.html</title>
+    <style>
+        * {
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:visited{
+        color: black;
+        text-decoration: none;
+    }
+    a:hover{
+        background-color: lightgreen;
+    }
+    header{
+        width: 900px;
+        height: 70px;
+        background-color: lemonchiffon;
+    }
+    header ul{
+        display: inline;
+        float: right;
+    }
+    html, body {
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+    }
+    body{
+        background-color: white;
+        background-image: url(./dot.png);
+    }
+    #container {
+        position:relative;
+        margin:0px auto;
+        width: 900px;
+        height: 100%; 
+        background: white;
+    }
+    h3{
+        display: inline;
+        text-shadow: 2px 2px yellow;
+    }
+    section{
+        width: 370px;
+        height: 240px;
+        border-radius: 20px;
+        border: 1px solid orange;
+        background-color: white;
+        float: left;
+        margin: 30px;
+    }
+    header ul li{
+        list-style-type: none;
+        display: inline;
+        margin: 30px;
+    }
+    .s3{
+        clear: left;
+    }
+    .s2 h3{
+        text-align: right;
+    }
+    .s4 h3{
+        text-align: right;
+    }
+    footer{
+        clear: left;
+        width: 900px;
+        height: 80px;
+        display: inline;
+        text-align: center;
+        background-color: lemonchiffon;
+    }
+    footer img{
+        width: 50px;
+        float: right;
+    }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+             <img src="./logo.png">
+             <ul>
+                <li><a href="./문제1_index.html">홈</a></li>
+                <li><a href="./문제2_자기소개.html">나란?</a></li>
+                <li><a href="./문제3_나의하루.html">나의 하루</a></li>
+            </ul>
+        </header>
+        <div>
+            <section class="s1">
+                <img src="./note.png"><h3>Who am I?</h3>
+                <p>이름은 가유빈이며<br>현재 동덕여자대학교 컴퓨터학과 다니고 있는 학생입니다.</p>
+            </section>
+            <section class="s2">
+                <img src="./note.png"><h3>좌우명</h3>
+                <p>우리가 이룬 것만큼, 이루지 못한 것도 자랑스럽습니다.(i'm as proud of what we don't do as i am of what do.)
+                    <br>by Steve Jobs
+                </p>
+            </section>
+            <section class="s3">
+                <img src="./note.png"><h3>관심 및 선호</h3>
+                <ul>
+                    <li>좋아하는 것</li>
+                    <ol>
+                        <li>노래 듣기</li>
+                        <li>책 읽기</li>
+                        <li>산책 하기</li>
+                    </ol>
+                    <li>올해 하고 싶은 것</li>
+                    <ol>
+                        <li>좋은 학점 받기</li>
+                        <li>여행 가기</li>
+                    </ol>
+                </ul>
+            </section>
+            <section class="s4">
+                <img src="./note.png"><h3>Future</h3>
+                <p>아직 확실하지는 않지만, 개발자가 되어 좋은 프로그램을 만들고 싶다.</p>
+            </section>
+        </div>
+        <footer>
+            <img src="./ryan.png">
+            <h5>COPTRIGHT (C) DDWU ALL RIGHT RESERVED<br>
+                오늘 하루도 기분 좋게....<br>
+                <a href="#">facebook|</a> <a href="#">instagram</a></h5>
+        </footer>
+    </div>
+</body>
+</html>

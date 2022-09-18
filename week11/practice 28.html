@@ -1,0 +1,43 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 28</title>
+    <style>
+        div{
+            border: 1.5px solid black;
+            text-align: center;
+            width: 150px;
+            height: 200px;
+            margin: 30px;
+            padding: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h2>익명 함수 사용</h2>
+    <script>
+        var datas = [20, 31, 40, 10, 23];
+
+        var is_prime = function(n){
+            for(var i = 2;i < n;i++)
+                if(n % i == 0)
+                    return false;
+            return true;
+        }
+        for(var j = 0;j < data.length; j++)
+        {
+            document.write("<div>");
+            document.write("<h3>" + datas[j] + "</h3>");
+            if(is_Prime(datas[j]))//소수이면
+                document.write("<img src = './smile.png' alt='웃음'>");
+            else//소수아니면
+                document.write("<img src = './sad.png' alt='슬픔'>");
+            document.write("</div>");
+        }
+    </script>
+</body>
+</html>

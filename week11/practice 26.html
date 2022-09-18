@@ -1,0 +1,60 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 26</title>
+    <style>
+        table{
+            border: 1px solid gray;
+            margin: auto;
+            text-align: center;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        .box1{
+            background-color: #89CD44;
+        }
+        .box2{
+            background-color: #F3F4C3;
+        }
+        td{
+            border: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var count = 0;
+        var random = parseInt(Math.random() * 50) + 1;
+        var num = parseInt(prompt("추측한 수는"));
+        while(num != random)
+        {
+            if(num < random)
+            {
+                alert("더 큰 수를 말하시오");
+                num = parseInt(prompt("추측한 수는"));
+                count++;
+            }
+            else if(num > random)
+            {
+                alert("더 작은 수를 말하시오");
+                num = parseInt(prompt("추측한 수는"));
+                count++;
+            }
+        }
+            if(num == random)
+            {
+                document.write("<table>");
+                document.write('<tr class = "box1">');
+                document.write("<td>" + '<h1>' + "정답은 " + random + '</h1>' + "</td>");
+                document.write('</tr>');
+                document.write('<tr class = "box2">');
+                document.write("<td>" + '<h1>' + "시도횟수는" + count + "번" + '</h1>' + "</td>");
+                document.write('</tr>');
+                document.write("</table>");
+            }
+    </script>
+</body>
+</html>

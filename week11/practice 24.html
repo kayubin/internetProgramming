@@ -1,0 +1,37 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 24</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        #print{
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>3의 배수 찾기</h1>
+    <script>
+        var x = parseInt(prompt("몇 까지 3의 배수를 찾을까요?"));
+        var i;
+        var count = 0;
+        document.write("<p>")
+        for(i = 0; 3 * (i + 1) < x; i++)
+        {
+            document.write(3 * (i + 1) + "," +  " ");
+            count++;
+        }//가운데 정렬로 출력 되야함
+        document.write("</p>")
+        document.write("<p id = 'print'>" + "<br>" + x + "까지 3의 배수의 갯수 : " + count + "</p>");
+    </script>
+</body>
+</html>

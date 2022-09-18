@@ -1,0 +1,35 @@
+<!--컴퓨터학과,20220740,가유빈-->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery 1</title>
+    <script src="./jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>메시지: 마지막 수업입니다.</p>
+    <img src="./images/smile (1).png">
+    <img src="./images/sad (1).png">
+    <button>메시지 삭제</button>
+    <input type="button" value="이미지 삭제" id="btn1">
+    <input type="button" value="메시지 보기" id="btn2">
+    <input type="button" value="이미지 보기" id="btn3">
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").hide();
+            });
+            $("#btn1").click(function(){
+                $("[src='./images/sad (1).png']").hide();
+            });
+            $("#btn2").click(function(){
+                $("p").show();
+            });
+            $("#btn3").click(function(){
+                $("[src='./images/sad (1).png']").show();
+            });
+        });
+    </script>
+</body>
+</html>
